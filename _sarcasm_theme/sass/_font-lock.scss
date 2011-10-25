@@ -1,0 +1,248 @@
+/*
+ * Colors
+ */
+
+@import "sarcasm-theme";
+
+/*
+ * Attributes
+ */
+.org-bold {
+    /* bold */
+    font-weight: bold;
+}
+
+.org-italic {
+    /* italic */
+    font-style: italic;
+}
+.org-underline {
+    /* underline */
+    text-decoration: underline;
+}
+.org-superscript {
+}
+.org-shadow {
+    /* shadow */
+    color : $sarcasm-bright-grey;
+}
+.org-link {                     /* (FIXME: good name ?) */
+/* link */
+    color: $sarcasm-soft-blue;
+    text-decoration: underline;
+}
+
+/*
+ * Font Lock
+ */
+.org-builtin {
+    /* font-lock-builtin-face */
+    color: $sarcasm-soft-blue;
+}
+.org-comment {
+    /* font-lock-comment-face */
+    color: $sarcasm-red;
+    font-style: italic;
+}
+.org-comment-delimiter {
+    /* font-lock-comment-delimiter-face */
+    @extend .org-comment;
+}
+.org-constant {
+    /* font-lock-constant-face */
+    color: $sarcasm-pink;
+    font-weight: bold;
+}
+.org-string {
+    /* font-lock-string-face */
+    color: $sarcasm-violet;
+}
+.org-doc {
+    /* font-lock-doc-face */
+    @extend .org-string;
+    font-style: italic;
+}
+.org-function-name {
+    /* font-lock-function-name-face */
+    color: $sarcasm-soft-blue;
+    font-weight: bold;
+}
+.org-keyword {
+    /* font-lock-keyword-face */
+    color: $sarcasm-cyan;
+    font-weight: bold;
+}
+.org-preprocessor {
+    /* font-lock-preprocessor-face */
+    @extend .org-builtin;
+    color: $sarcasm-dark-orange;
+    font-weight: bold;
+}
+.org-regexp-grouping-backslash /* font-lock-regexp-grouping-backslash */
+.org-regexp-grouping-construct { /* font-lock-regexp-grouping-construct */
+    @extend .org-bold;
+}
+.org-type {
+    /* font-lock-type-face */
+    color: $sarcasm-dark-orange;
+    font-weight: bold;
+}
+.org-variable-name {
+    /* font-lock-variable-name-face */
+    color: $sarcasm-pink;
+}
+.org-warning {
+    /* font-lock-warning-face */
+    color: $sarcasm-red;
+    font-weight: bold;
+}
+
+/*
+ * Org
+ */
+.org-org-todo {
+    /* org-todo */
+    color: $sarcasm-red;
+    font-weight: bold;
+}
+.org-org-checkbox-statistics-todo {
+    /* org-checkbox-statistics-todo */
+    @extend .org-org-todo;
+}
+.org-org-checkbox {
+    /* org-checkbox */
+    @extend .org-bold;
+}
+.org-org-code                   /* org-code */
+.org-org-block {                /* org-block */
+    @extend .org-shadow;
+}
+.org-org-block-background {
+/* org-block-background */
+}
+.org-org-meta-line {
+    /* org-meta-line */
+    @extend .org-comment;
+}
+.org-org-block-begin-line       /* org-block-begin-line */
+.org-org-block-end-line {       /* org-block-end-line */
+    @extend .org-org-meta-line;
+}
+.org-org-date {            /* TODO: Set a color in sarcasm-theme.el */
+    /* org-date */
+    color: #00ffff;
+    text-decoration: underline;
+}
+.org-org-document-info {
+    /* org-document-info */
+    color: $sarcasm-cyan;
+}
+.org-org-hide {
+    /* org-hide */
+    color: $sarcasm-foreground;
+}
+.org-org-document-info-keyword {
+    /* org-document-info-keyword */
+    color: #d2691e;
+}
+.org-org-document-title {
+    /* org-document-title */
+    color: $sarcasm-orange;
+    font-size: 144%;
+    font-weight: bold;
+}
+.org-org-footnote {             /* TODO: set org-footnote face */
+    /* org-footnote */
+    color: #00ffff;
+    text-decoration: underline;
+}
+.org-org-verbatim {
+    /* org-verbatim */
+    @extend .org-shadow;
+}
+.org-org-formula {              /* TODO: set org-forma face */
+    /* org-formula */
+    color: #ff7f24;
+}
+
+/* TODO: create outline-[134] faces and make org-level-[1234] extend
+   the faces */
+.org-org-level-1 {
+    /* org-level-1 */
+    color: #4477aa;
+    font-weight: bold;
+}
+.org-org-level-2 {
+    /* org-level-2 */
+    color: #ff1493;
+}
+.org-org-level-3 {
+    /* org-level-3 */
+    color: #6495ed;
+    font-weight: bold;
+}
+.org-org-level-4 {
+    /* org-level-4 */
+    color: #b22222;
+    font-style: italic;
+}
+
+.org-org-link {
+    /* org-link */
+    @extend .org-link;
+}
+.org-org-property-value {
+    /* org-property-value */
+}
+.org-org-special-keyword {
+    /* org-special-keyword */
+    @extend .org-keyword;
+}
+.org-org-table {                /* TODO: customize this face */
+    /* org-table */
+    color: #87cefa;
+}
+.org-org-tag {
+    /* org-tag */
+    font-weight: bold;
+}
+
+/*
+ * Garbage...
+ */
+.ATTRLIST {
+    /* (:strike-through t) */
+    text-decoration: line-through;
+}
+.ATTRLIST-1 {
+    /* (:strike-through t org-table) */
+    text-decoration: line-through;
+}
+
+.org-sh-escaped-newline         /* sh-escaped-newline */
+.org-tex-math {                 /* tex-math */
+    @extend .org-string;
+}
+.org-sh-quoted-exec {
+    /* sh-quoted-exec */
+    color: #fa8072;
+}
+.org-diff-context {
+    /* diff-context */
+    @extend .org-shadow;
+}
+
+.org-makefile-targets           /* makefile-targets */
+.org-nxml-element-local-name {  /* nxml-element-local-name */
+    @extend .org-function-name;
+}
+
+/*
+ * .org-nxml-delimiter {
+ * /\* nxml-delimiter *\/
+ * }
+ * .org-nxml-tag-delimiter         /\* nxml-tag-delimiter *\/
+ * .org-nxml-tag-slash {           /\* nxml-tag-slash *\/
+ *     @extend .org-nxml-delimiter;
+ * }
+ */

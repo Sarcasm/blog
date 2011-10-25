@@ -1,2 +1,2 @@
 * Github Pages
-  PLaying with Github pages.
+  Playing with Github pages.

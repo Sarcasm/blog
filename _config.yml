@@ -1,0 +1,5 @@
+safe:        false
+auto:        false
+server:      true
+base-url:    /
+exclude:     ['_sarcasm_theme']

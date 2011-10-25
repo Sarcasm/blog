@@ -1,0 +1,435 @@
+/*
+ * Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ *
+ */
+
+@import "font-lock";
+@import "base";
+
+@import "compass/css3";
+
+/*
+ * General
+ */
+body {
+    font-family: 'Rosario', serif;
+    background-color: $background_color;
+    color: $font_color;
+}
+
+.logo {
+    text-align: center;
+    @include scale(0.75);
+}
+
+.logo:hover {
+    @include transition-property(all);
+    @include transition-duration(0.5s);
+    @include scale(1);
+}
+
+article {
+    max-width: 750px;
+    width: expression(this.width > 750 ? 750: true);
+    text-align: justify;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 2em;
+}
+
+p {
+    margin: 1em 0;
+}
+
+a {
+    color: $url_color;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $url_color;
+/* text-decoration: underline; */
+}
+
+article a:hover {
+    @include transition-property(all);
+    @include transition-duration(0.8s);
+    color: $background_color;
+    background-color: $url_color;
+    text-decoration: none;
+}
+
+h1, h1 a, h2, h3, h4, h5, h6 {
+    text-align: left;
+    color: $title_color;
+    font-weight: bolder;
+    font-family: 'Rosario', serif;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+h1 a:hover {
+    @include transition-property(all);
+    @include transition-duration(1s);
+    color: $background_color;
+    background-color: $title_color;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: .75em 0;
+}
+h3 {
+    font-size: 1.5em;
+    margin: .83em 0;
+}
+h4 {
+    font-size: 1.2em;
+    margin: 1.25em 0;
+}
+h5 {
+    /* font-size: 1em; */
+    margin: 1.5em 0;
+}
+h6 {
+    font-size: .75em;
+    margin: 1.67em 0;
+}
+
+/* For code references */
+.code-highlighted {
+    background-color: $sarcasm-dark-grey;
+}
+
+/*
+ * `org-export-html-style'
+ * you should consider to include definitions for the following classes:
+ * title, todo, done, timestamp, timestamp-kwd, tag, target.
+ *
+ *      .title { text-align: center; }
+ *      .todo, .timestamp-kwd { color: red; }
+ *      .done { color: green; }
+ */
+
+/* DEFAULT CSS STYLE
+ * html { font-family: Times, serif; font-size: 12pt; }
+ * .title  { text-align: center; }
+ * .todo   { color: red; }
+ * .done   { color: green; }
+ * .tag    { background-color: #add8e6; font-weight:normal }
+ * .target { }
+ * .timestamp { color: #bebebe; }
+ * .timestamp-kwd { color: #5f9ea0; }
+ * .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+ * .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+ * .center {margin-left:auto; margin-right:auto; text-align:center;}
+ * p.verse { margin-left: 3% }
+ * pre {
+ *     border: 1pt solid #AEBDCC;
+ *     background-color: #F3F5F7;
+ *     padding: 5pt;
+ *     font-family: courier, monospace;
+ *     font-size: 90%;
+ *     overflow:auto;
+ * }
+ * table { border-collapse: collapse; }
+ * td, th { vertical-align: top;  }
+ * th.right  { text-align:center;  }
+ * th.left   { text-align:center;   }
+ * th.center { text-align:center; }
+ * td.right  { text-align:right;  }
+ * td.left   { text-align:left;   }
+ * td.center { text-align:center; }
+ * dt { font-weight: bold; }
+ * div.figure { padding: 0.5em; }
+ * div.figure p { text-align: center; }
+ * textarea { overflow-x: auto; }
+ * .linenr { font-size:smaller }
+ * .code-highlighted {background-color:#ffff00;}
+ * .org-info-js_info-navigation { border-style:none; }
+ * #org-info-js_console-label { font-size:10px; font-weight:bold;
+ *                              white-space:nowrap; }
+ * .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+ *                                font-weight:bold; }
+ */
+
+/*
+ * Lists
+ * TODO:
+ * Faire un truc avec le hover, plus on est dans le hover plus on a
+ * une opacité faible, au final ça permettrait de voir les différents
+ * niveau de 'nesting'
+ */
+article
+{
+    ul, ol {
+        margin-top: -10px;
+        padding: 5px;
+    }
+
+    li {
+        margin-left: 20px;
+        padding: 2px;
+        @include border-radius(5px);
+    }
+
+    /*
+     * While going deeply in the item list the background is darker.
+     * See
+     * http://stackoverflow.com/questions/806000/css-semi-transparent-background-but-not-text
+     */
+    li:hover {
+        /* Fallback for web browsers that doesn't support RGBa */
+        background: rgb(255, 255, 255) transparent;
+        /* RGBa with 0.05 opacity */
+        background: rgba(68, 119, 170, 0.05);
+        /* For IE 5.5 - 7*/
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#084477aa, endColorstr=#084477aa);
+        /* For IE 8*/
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#084477aa, endColorstr=#084477aa)";
+    }
+
+    li ul, li ol {
+        margin-top: 0px;
+    }
+
+    ul li {
+        list-style-type: circle;
+    }
+
+    ol li,
+    ol li li li {
+        list-style-type: decimal;
+    }
+
+    ol li li,
+    ol li li li li {
+        list-style: lower-latin;
+    }
+
+    /* Definitions */
+    dl {
+        margin: 5px 10px;
+    }
+
+    dt {
+        font-size: 1.1em;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    dd {
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+/*
+ * Tables
+ * Vertical minimalist:
+ * http://coding.smashingmagazine.com/2008/08/13/top-10-css-table-designs/
+ */
+table {
+    margin: 10px 5%;
+    width: 90%;
+    text-align: left;
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+/* table header */
+table th {
+    padding: 8px 2px;
+    font-size: 1.2em;
+    border-bottom: 2px solid $beautiful_blue;
+}
+
+/* table data */
+table td {
+    padding: 6px 2px;
+}
+
+/* table header row */
+thead tr {
+}
+
+/* table body row */
+tbody tr {
+}
+
+/*
+ * Code chunks
+ */
+pre, code {
+    font-family: 'Inconsolata', monospace;
+    font-size: 13pt;
+}
+
+pre {
+    padding: 0.6em; /* without this there is a *ugly* vertical scrollbar */
+    margin: 1em 0;
+    overflow: auto;
+}
+
+code {
+    border: solid 1px #ccc;
+    color: lighten($font_color, 10%);
+    background-color: darken($background_color, 5%);
+    padding: 0 3px;
+}
+
+.example {
+    background-color: #ccc;
+    @include border-top-left-radius(15px);
+    @include border-bottom-right-radius(15px);
+    @include box-shadow(rgba(blue, 0.4) 0 0 20px, rgba(green, 0.2) 0 0 2px 1px inset);
+    border: 1px solid #999;
+}
+
+.src {
+    background-color: $sarcasm-background;
+    color: $sarcasm-foreground;
+    @include border-top-left-radius(15px);
+    @include border-bottom-right-radius(15px);
+    @include box-shadow(rgba(blue, 0.4) 0 0 20px, rgba(green, 0.2) 0 0 2px 1px inset);
+    border: 2px dashed darken($background_color, 30%);
+    position: relative;
+}
+
+/*
+ * http://stackoverflow.com/questions/7192054/create-box-with-title-legend-in-css
+ * Mettre du code specific pour IE 6/7 (ie 7 surtout) ? au pire osef si non visible.
+ */
+.src:before {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0.5em;
+    color: $sarcasm-foreground;
+    font-weight: bolder;
+    @include opacity(0.15);
+    @include border-top-left-radius(5px);
+    @include border-bottom-right-radius(5px);
+}
+
+.src:hover:before {
+    @include opacity(0.25);
+}
+
+.src-c\+\+:before {
+    content: 'C++';
+}
+
+.src-emacs-lisp:before {
+    content: 'Emacs Lisp';
+}
+
+.src-org:before {
+    content: 'Org-Mode';
+}
+
+.src-gnuplot:before {
+    content: 'Gnuplot';
+}
+
+.src-ruby:before {
+    content: 'Ruby';
+}
+
+.src-python:before {
+    content: 'Python';
+}
+
+.src-java:before {
+    content: 'Java';
+}
+
+.src-xml:before {
+    content: 'XML';
+}
+
+.src-message:before {
+    content: 'Email';
+}
+
+.src-sh:before {
+    content: 'Shell';
+}
+
+.src-bash:before {
+    content: 'Bash';
+}
+
+.src-R:before {
+    content: 'R';
+}
+
+.src-r:before {
+    content: 'R';
+}
+
+.src-perl:before {
+    content: 'Perl';
+}
+
+.src-sql:before {
+    content: 'SQL';
+}
+
+.src-php:before {
+    content: 'PHP';
+}
+
+/* TODO: date formating see index.html/post.html */
+article time {
+    font-family: 'Rosario', serif;
+    float: left;
+    position: relative;
+    /* FIXME: 40 in a variable */
+    width: 40px;
+    left: -70px;
+    /* margin-left: -70; */
+}
+
+.day {
+    color: lighten($beautiful_blue, 20%);
+    font-size: 2.2em;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    top: 20px;
+    display: block;
+    position: absolute;
+}
+
+.month {
+    color: lighten($beautiful_blue, 20%);
+    display: block;
+    position: absolute;
+    font-size: 1.4em;
+    top: -3px;
+}
+
+.year {
+    color: $beautiful_maroon;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-weight: bold;
+    @include rotate(-90deg);
+    /* FIXME: Test under IE
+       filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); */
+    /* border-right: 1px solid $beautiful_maroon; */
+    top: 13px;
+    right: -30px;
+    display: block;
+    position: absolute;
+}

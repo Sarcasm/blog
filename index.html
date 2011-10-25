@@ -1,12 +1,32 @@
-<html>
-  <head>
-    <title>Test</title>
-  </head>
-  <body>
-    <h1>Test</h1>
-    Hello Github Pages !
-    <address>
-      <a href="mailto:guillaume.papin@epitech.eu">Guillaume Papin</a>
-    </address>
-  </body>
-</html>
+---
+layout: default
+title: sarcasm
+---
+{% assign first_post = site.posts.first %}
+
+<!-- FIXME: Ugly copy/paste from post.html -->
+<article>
+  <time datetime="{{ first_post.date | date: "%Y-%m-%d" }}">
+    <div class="year">  {{ first_post.date | date: '%Y' }} </div>
+    <div class="month"> {{ first_post.date | date: '%b' }} </div>
+    <div class="day">   {{ first_post.date | date: '%d' }} </div>
+  </time>
+
+  {{ first_post.content }}
+
+</article>
+
+<article>
+  <h2>Older entries</h2>
+  <ul id="archive">
+
+    {% for post in site.posts %}
+
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - <abbr>{{ post.date | date_to_string }}</abbr>
+    </li>
+
+    {% endfor %}
+
+  </ul>
+</article>

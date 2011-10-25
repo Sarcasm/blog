@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<article>
+  <time datetime="{{ page.date | date: "%Y-%m-%d" }}">
+    <div class="year">  {{ page.date | date: '%Y' }} </div>
+    <div class="month"> {{ page.date | date: '%b' }} </div>
+    <div class="day">   {{ page.date | date: '%d' }} </div>
+  </time>
+
+  {{ content }}
+
+</article>

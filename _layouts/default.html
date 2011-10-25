@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- FIXME: dangerous ? links are relative to the root of the site -->
+    <base href="{{ site.base-url }}" />
+
+    <!-- HTML5 for IE - see: http://remysharp.com/2009/01/07/html5-enabling-script -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+
+    <!-- Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Rosario|Cabin|Inconsolata' rel='stylesheet' type='text/css'>
+
+    <!--[if IE]>
+        <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <title>{{ page.title }}</title>
+
+    <script>
+    function CodeHighlightOn(elem, id) {
+        var target = document.getElementById(id);
+        if (null != target) {
+            elem.cacheClassElem = elem.className;
+            elem.cacheClassTarget = target.className;
+            target.className = "code-highlighted";
+            elem.className = "code-highlighted";
+        }
+    }
+
+    function CodeHighlightOff(elem, id) {
+        var target = document.getElementById(id);
+        if (elem.cacheClassElem)
+            elem.className = elem.cacheClassElem;
+        if (elem.cacheClassTarget)
+            target.className = elem.cacheClassTarget;
+    }
+</script>
+  </head>
+
+  <body>
+
+    <div class="logo">
+      <a href="/"><img src="/images/logo.png" alt="logo" /></a>
+    </div>
+
+    <!-- TODO: Uncomment one day
+     !-- <nav>
+     !--   <ul>
+     !--     <li><a href="/">home</a></li>
+     !--     <li><a href="#">blog</a></li>
+     !--     <li><a href="#">gallery</a></li>
+     !--     <li><a href="#">about</a></li>
+     !--   </ul>
+     !-- </nav>
+      -->
+
+    {{ content }}
+  </body>
+
+  <footer>
+    <p>&#169; 2011 - <a href="#">Guillaume Papin</a></p>
+  </footer>
+
+</html>
