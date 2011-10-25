@@ -1,0 +1,52 @@
+---
+title: First post
+layout: post
+on: <2011-10-25 Tue>
+CATEGORY: blorg
+---
+
+<div id="outline-container-1" class="outline-1">
+<h1 id="sec-1"><a href="{{ page.url }}">First post</a></h1>
+<div class="outline-text-1" id="text-1">
+
+
+<p>
+  This <i>blog</i> is a work in progress, I'm blogging with <a href="http://jekyllrb.com/">jekyll</a> and
+  <a href="http://orgmode.org/">Org-Mode</a> in <a href="http://www.gnu.org/s/emacs/">Emacs</a> (<i>articles</i> are exported with <a href="http://juanreyero.com/open/org-jekyll/">Org-jekyll</a>). I'm using
+  <a href="http://compass-style.org/">compass</a> to generate the CSS, which seems more pleasant for me than
+  plain old CSS.
+</p>
+<p>
+  I'm trying to take advantage of the Org-Mode ability to generate
+  source code export that use the Emacs colors, here is a snippet of
+  <code>C++</code> code.
+</p>
+
+
+
+<pre class="src src-c++"><span class="linenr"> 1:  </span><span class="org-keyword">class</span> <span class="org-type">Blah</span>
+<span class="linenr"> 2:  </span>{
+<span class="linenr"> 3:  </span><span class="org-keyword">public</span>:
+<span id="coderef-ctor" class="coderef-off"><span class="linenr"> 4:  </span>  <span class="org-function-name">Blah</span>();</span>
+<span id="coderef-dtor" class="coderef-off"><span class="linenr"> 5:  </span>  ~<span class="org-function-name">Blah</span>();</span>
+<span class="linenr"> 6:  </span>
+<span class="linenr"> 7:  </span><span class="org-keyword">private</span>:
+<span class="linenr"> 8:  </span>  Blah(Blah <span class="org-keyword">const</span> <span class="org-warning">&amp;</span>);
+<span class="linenr"> 9:  </span>  <span class="org-type">Blah</span>&amp; <span class="org-keyword">operator</span><span class="org-function-name">=</span>(Blah <span class="org-keyword">const</span> <span class="org-warning">&amp;</span>);
+<span class="linenr">10:  </span>};
+</pre>
+
+
+<ul>
+<li><a href="#coderef-ctor" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-ctor');" onmouseout="CodeHighlightOff(this, 'coderef-ctor');">Line 4</a> it's a constructor declaration
+</li>
+<li><a href="#coderef-dtor" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-dtor');" onmouseout="CodeHighlightOff(this, 'coderef-dtor');">Line 5</a> it's a destructor declaration
+</li>
+</ul>
+
+
+
+<p>
+  That's all for the moment, it's just a test.
+</p></div>
+</div>
