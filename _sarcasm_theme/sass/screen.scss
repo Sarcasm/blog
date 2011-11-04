@@ -23,6 +23,7 @@ body {
 .logo {
     text-align: center;
     @include scale(0.75);
+    padding: 20px 10px;
 }
 
 .logo:hover {
@@ -268,6 +269,7 @@ tbody tr {
 }
 
 /*
+ * FIXME: the font is too big for inline words, in multi-line <p>.\n<code>...</code>..</p>
  * Code chunks
  */
 pre, code {
@@ -432,4 +434,44 @@ article time {
     right: -30px;
     display: block;
     position: absolute;
+}
+
+/*
+ * Blog posts in index.html
+ */
+
+.archive {
+    font-family: 'Rosario', serif;
+}
+
+.archive ul li {
+    list-style-type: none;
+    margin: 0;
+    margin-right: 15%;
+}
+
+.archive ul li:hover {
+    background-color: none;
+}
+
+.archive a {
+    padding: 10px;
+    overflow: hidden;
+    @include border-radius(5px);
+    display: block;
+}
+
+.archive .title {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.archive .date {
+    color: $sarcasm-dark-grey;
+    font-style: italic;
+    float: right;
+}
+
+.archive a:hover .date {
+    color: darken($sarcasm-foreground, 5%);
 }

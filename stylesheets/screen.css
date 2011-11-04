@@ -365,7 +365,7 @@
  */
 /* fff8dc */
 /* Picked up in the Org-Mode unicorn logo */
-/* line 17, ../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, /usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -387,45 +387,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, /usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, /usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, /usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, /usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, /usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, /usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, /usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../../usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, /usr/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -448,9 +448,10 @@ body {
   -o-transform: scale(0.75, 0.75);
   -ms-transform: scale(0.75, 0.75);
   transform: scale(0.75, 0.75);
+  padding: 20px 10px;
 }
 
-/* line 28, ../_sarcasm_theme/sass/screen.scss */
+/* line 29, ../_sarcasm_theme/sass/screen.scss */
 .logo:hover {
   -moz-transition-property: all;
   -webkit-transition-property: all;
@@ -467,7 +468,7 @@ body {
   transform: scale(1, 1);
 }
 
-/* line 34, ../_sarcasm_theme/sass/screen.scss */
+/* line 35, ../_sarcasm_theme/sass/screen.scss */
 article {
   max-width: 750px;
   width: expression(this.width > 750 ? 750: true);
@@ -477,24 +478,24 @@ article {
   padding-right: 2em;
 }
 
-/* line 43, ../_sarcasm_theme/sass/screen.scss */
+/* line 44, ../_sarcasm_theme/sass/screen.scss */
 p {
   margin: 1em 0;
 }
 
-/* line 47, ../_sarcasm_theme/sass/screen.scss */
+/* line 48, ../_sarcasm_theme/sass/screen.scss */
 a {
   color: maroon;
   text-decoration: none;
 }
 
-/* line 52, ../_sarcasm_theme/sass/screen.scss */
+/* line 53, ../_sarcasm_theme/sass/screen.scss */
 a:hover {
   color: maroon;
   /* text-decoration: underline; */
 }
 
-/* line 57, ../_sarcasm_theme/sass/screen.scss */
+/* line 58, ../_sarcasm_theme/sass/screen.scss */
 article a:hover {
   -moz-transition-property: all;
   -webkit-transition-property: all;
@@ -509,7 +510,7 @@ article a:hover {
   text-decoration: none;
 }
 
-/* line 65, ../_sarcasm_theme/sass/screen.scss */
+/* line 66, ../_sarcasm_theme/sass/screen.scss */
 h1, h1 a, h2, h3, h4, h5, h6 {
   text-align: left;
   color: #4682b4;
@@ -517,18 +518,18 @@ h1, h1 a, h2, h3, h4, h5, h6 {
   font-family: 'Rosario', serif;
 }
 
-/* line 72, ../_sarcasm_theme/sass/screen.scss */
+/* line 73, ../_sarcasm_theme/sass/screen.scss */
 h1 {
   font-size: 2em;
   margin: .67em 0;
 }
 
-/* line 77, ../_sarcasm_theme/sass/screen.scss */
+/* line 78, ../_sarcasm_theme/sass/screen.scss */
 h1 a {
   text-decoration: none;
 }
 
-/* line 81, ../_sarcasm_theme/sass/screen.scss */
+/* line 82, ../_sarcasm_theme/sass/screen.scss */
 h1 a:hover {
   -moz-transition-property: all;
   -webkit-transition-property: all;
@@ -542,38 +543,38 @@ h1 a:hover {
   background-color: #4682b4;
 }
 
-/* line 88, ../_sarcasm_theme/sass/screen.scss */
+/* line 89, ../_sarcasm_theme/sass/screen.scss */
 h2 {
   font-size: 1.8em;
   margin: .75em 0;
 }
 
-/* line 92, ../_sarcasm_theme/sass/screen.scss */
+/* line 93, ../_sarcasm_theme/sass/screen.scss */
 h3 {
   font-size: 1.5em;
   margin: .83em 0;
 }
 
-/* line 96, ../_sarcasm_theme/sass/screen.scss */
+/* line 97, ../_sarcasm_theme/sass/screen.scss */
 h4 {
   font-size: 1.2em;
   margin: 1.25em 0;
 }
 
-/* line 100, ../_sarcasm_theme/sass/screen.scss */
+/* line 101, ../_sarcasm_theme/sass/screen.scss */
 h5 {
   /* font-size: 1em; */
   margin: 1.5em 0;
 }
 
-/* line 104, ../_sarcasm_theme/sass/screen.scss */
+/* line 105, ../_sarcasm_theme/sass/screen.scss */
 h6 {
   font-size: .75em;
   margin: 1.67em 0;
 }
 
 /* For code references */
-/* line 110, ../_sarcasm_theme/sass/screen.scss */
+/* line 111, ../_sarcasm_theme/sass/screen.scss */
 .code-highlighted {
   background-color: #2b2b2b;
 }
@@ -635,7 +636,7 @@ h6 {
  * une opacité faible, au final ça permettrait de voir les différents
  * niveau de 'nesting'
  */
-/* line 174, ../_sarcasm_theme/sass/screen.scss */
+/* line 175, ../_sarcasm_theme/sass/screen.scss */
 article {
   /*
    * While going deeply in the item list the background is darker.
@@ -644,12 +645,12 @@ article {
    */
   /* Definitions */
 }
-/* line 175, ../_sarcasm_theme/sass/screen.scss */
+/* line 176, ../_sarcasm_theme/sass/screen.scss */
 article ul, article ol {
   margin-top: -10px;
   padding: 5px;
 }
-/* line 180, ../_sarcasm_theme/sass/screen.scss */
+/* line 181, ../_sarcasm_theme/sass/screen.scss */
 article li {
   margin-left: 20px;
   padding: 2px;
@@ -660,7 +661,7 @@ article li {
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 191, ../_sarcasm_theme/sass/screen.scss */
+/* line 192, ../_sarcasm_theme/sass/screen.scss */
 article li:hover {
   /* Fallback for web browsers that doesn't support RGBa */
   background: white transparent;
@@ -671,35 +672,35 @@ article li:hover {
   /* For IE 8*/
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#084477aa, endColorstr=#084477aa)";
 }
-/* line 202, ../_sarcasm_theme/sass/screen.scss */
+/* line 203, ../_sarcasm_theme/sass/screen.scss */
 article li ul, article li ol {
   margin-top: 0px;
 }
-/* line 206, ../_sarcasm_theme/sass/screen.scss */
+/* line 207, ../_sarcasm_theme/sass/screen.scss */
 article ul li {
   list-style-type: circle;
 }
-/* line 211, ../_sarcasm_theme/sass/screen.scss */
+/* line 212, ../_sarcasm_theme/sass/screen.scss */
 article ol li,
 article ol li li li {
   list-style-type: decimal;
 }
-/* line 216, ../_sarcasm_theme/sass/screen.scss */
+/* line 217, ../_sarcasm_theme/sass/screen.scss */
 article ol li li,
 article ol li li li li {
   list-style: lower-latin;
 }
-/* line 221, ../_sarcasm_theme/sass/screen.scss */
+/* line 222, ../_sarcasm_theme/sass/screen.scss */
 article dl {
   margin: 5px 10px;
 }
-/* line 225, ../_sarcasm_theme/sass/screen.scss */
+/* line 226, ../_sarcasm_theme/sass/screen.scss */
 article dt {
   font-size: 1.1em;
   font-weight: bold;
   padding: 5px;
 }
-/* line 231, ../_sarcasm_theme/sass/screen.scss */
+/* line 232, ../_sarcasm_theme/sass/screen.scss */
 article dd {
   padding-left: 20px;
   padding-bottom: 10px;
@@ -710,7 +711,7 @@ article dd {
  * Vertical minimalist:
  * http://coding.smashingmagazine.com/2008/08/13/top-10-css-table-designs/
  */
-/* line 242, ../_sarcasm_theme/sass/screen.scss */
+/* line 243, ../_sarcasm_theme/sass/screen.scss */
 table {
   margin: 10px 5%;
   width: 90%;
@@ -720,7 +721,7 @@ table {
 }
 
 /* table header */
-/* line 251, ../_sarcasm_theme/sass/screen.scss */
+/* line 252, ../_sarcasm_theme/sass/screen.scss */
 table th {
   padding: 8px 2px;
   font-size: 1.2em;
@@ -728,7 +729,7 @@ table th {
 }
 
 /* table data */
-/* line 258, ../_sarcasm_theme/sass/screen.scss */
+/* line 259, ../_sarcasm_theme/sass/screen.scss */
 table td {
   padding: 6px 2px;
 }
@@ -736,15 +737,16 @@ table td {
 /* table header row */
 /* table body row */
 /*
+ * FIXME: the font is too big for inline words, in multi-line <p>.\n<code>...</code>..</p>
  * Code chunks
  */
-/* line 273, ../_sarcasm_theme/sass/screen.scss */
+/* line 275, ../_sarcasm_theme/sass/screen.scss */
 pre, code {
   font-family: 'Inconsolata', monospace;
   font-size: 13pt;
 }
 
-/* line 278, ../_sarcasm_theme/sass/screen.scss */
+/* line 280, ../_sarcasm_theme/sass/screen.scss */
 pre {
   padding: 0.6em;
   /* without this there is a *ugly* vertical scrollbar */
@@ -752,7 +754,7 @@ pre {
   overflow: auto;
 }
 
-/* line 284, ../_sarcasm_theme/sass/screen.scss */
+/* line 286, ../_sarcasm_theme/sass/screen.scss */
 code {
   border: solid 1px #ccc;
   color: #454545;
@@ -760,7 +762,7 @@ code {
   padding: 0 3px;
 }
 
-/* line 291, ../_sarcasm_theme/sass/screen.scss */
+/* line 293, ../_sarcasm_theme/sass/screen.scss */
 .example {
   background-color: #ccc;
   -moz-border-radius-topleft: 15px;
@@ -782,7 +784,7 @@ code {
   border: 1px solid #999;
 }
 
-/* line 299, ../_sarcasm_theme/sass/screen.scss */
+/* line 301, ../_sarcasm_theme/sass/screen.scss */
 .src {
   background-color: #1a1a1a;
   color: #f5f5f5;
@@ -810,7 +812,7 @@ code {
  * http://stackoverflow.com/questions/7192054/create-box-with-title-legend-in-css
  * Mettre du code specific pour IE 6/7 (ie 7 surtout) ? au pire osef si non visible.
  */
-/* line 313, ../_sarcasm_theme/sass/screen.scss */
+/* line 315, ../_sarcasm_theme/sass/screen.scss */
 .src:before {
   position: absolute;
   top: 0px;
@@ -834,94 +836,94 @@ code {
   border-bottom-right-radius: 5px;
 }
 
-/* line 325, ../_sarcasm_theme/sass/screen.scss */
+/* line 327, ../_sarcasm_theme/sass/screen.scss */
 .src:hover:before {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
   opacity: 0.25;
 }
 
-/* line 329, ../_sarcasm_theme/sass/screen.scss */
+/* line 331, ../_sarcasm_theme/sass/screen.scss */
 .src-c\+\+:before {
   content: 'C++';
 }
 
-/* line 333, ../_sarcasm_theme/sass/screen.scss */
+/* line 335, ../_sarcasm_theme/sass/screen.scss */
 .src-emacs-lisp:before {
   content: 'Emacs Lisp';
 }
 
-/* line 337, ../_sarcasm_theme/sass/screen.scss */
+/* line 339, ../_sarcasm_theme/sass/screen.scss */
 .src-org:before {
   content: 'Org-Mode';
 }
 
-/* line 341, ../_sarcasm_theme/sass/screen.scss */
+/* line 343, ../_sarcasm_theme/sass/screen.scss */
 .src-gnuplot:before {
   content: 'Gnuplot';
 }
 
-/* line 345, ../_sarcasm_theme/sass/screen.scss */
+/* line 347, ../_sarcasm_theme/sass/screen.scss */
 .src-ruby:before {
   content: 'Ruby';
 }
 
-/* line 349, ../_sarcasm_theme/sass/screen.scss */
+/* line 351, ../_sarcasm_theme/sass/screen.scss */
 .src-python:before {
   content: 'Python';
 }
 
-/* line 353, ../_sarcasm_theme/sass/screen.scss */
+/* line 355, ../_sarcasm_theme/sass/screen.scss */
 .src-java:before {
   content: 'Java';
 }
 
-/* line 357, ../_sarcasm_theme/sass/screen.scss */
+/* line 359, ../_sarcasm_theme/sass/screen.scss */
 .src-xml:before {
   content: 'XML';
 }
 
-/* line 361, ../_sarcasm_theme/sass/screen.scss */
+/* line 363, ../_sarcasm_theme/sass/screen.scss */
 .src-message:before {
   content: 'Email';
 }
 
-/* line 365, ../_sarcasm_theme/sass/screen.scss */
+/* line 367, ../_sarcasm_theme/sass/screen.scss */
 .src-sh:before {
   content: 'Shell';
 }
 
-/* line 369, ../_sarcasm_theme/sass/screen.scss */
+/* line 371, ../_sarcasm_theme/sass/screen.scss */
 .src-bash:before {
   content: 'Bash';
 }
 
-/* line 373, ../_sarcasm_theme/sass/screen.scss */
+/* line 375, ../_sarcasm_theme/sass/screen.scss */
 .src-R:before {
   content: 'R';
 }
 
-/* line 377, ../_sarcasm_theme/sass/screen.scss */
+/* line 379, ../_sarcasm_theme/sass/screen.scss */
 .src-r:before {
   content: 'R';
 }
 
-/* line 381, ../_sarcasm_theme/sass/screen.scss */
+/* line 383, ../_sarcasm_theme/sass/screen.scss */
 .src-perl:before {
   content: 'Perl';
 }
 
-/* line 385, ../_sarcasm_theme/sass/screen.scss */
+/* line 387, ../_sarcasm_theme/sass/screen.scss */
 .src-sql:before {
   content: 'SQL';
 }
 
-/* line 389, ../_sarcasm_theme/sass/screen.scss */
+/* line 391, ../_sarcasm_theme/sass/screen.scss */
 .src-php:before {
   content: 'PHP';
 }
 
 /* TODO: date formating see index.html/post.html */
-/* line 394, ../_sarcasm_theme/sass/screen.scss */
+/* line 396, ../_sarcasm_theme/sass/screen.scss */
 article time {
   font-family: 'Rosario', serif;
   float: left;
@@ -932,7 +934,7 @@ article time {
   /* margin-left: -70; */
 }
 
-/* line 404, ../_sarcasm_theme/sass/screen.scss */
+/* line 406, ../_sarcasm_theme/sass/screen.scss */
 .day {
   color: #86aace;
   font-size: 2.2em;
@@ -943,7 +945,7 @@ article time {
   position: absolute;
 }
 
-/* line 414, ../_sarcasm_theme/sass/screen.scss */
+/* line 416, ../_sarcasm_theme/sass/screen.scss */
 .month {
   color: #86aace;
   display: block;
@@ -952,7 +954,7 @@ article time {
   top: -3px;
 }
 
-/* line 422, ../_sarcasm_theme/sass/screen.scss */
+/* line 424, ../_sarcasm_theme/sass/screen.scss */
 .year {
   color: maroon;
   font-size: 1.5em;
@@ -970,4 +972,55 @@ article time {
   right: -30px;
   display: block;
   position: absolute;
+}
+
+/*
+ * Blog posts in index.html
+ */
+/* line 443, ../_sarcasm_theme/sass/screen.scss */
+.archive {
+  font-family: 'Rosario', serif;
+}
+
+/* line 447, ../_sarcasm_theme/sass/screen.scss */
+.archive ul li {
+  list-style-type: none;
+  margin: 0;
+  margin-right: 15%;
+}
+
+/* line 453, ../_sarcasm_theme/sass/screen.scss */
+.archive ul li:hover {
+  background-color: none;
+}
+
+/* line 457, ../_sarcasm_theme/sass/screen.scss */
+.archive a {
+  padding: 10px;
+  overflow: hidden;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+}
+
+/* line 464, ../_sarcasm_theme/sass/screen.scss */
+.archive .title {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+/* line 469, ../_sarcasm_theme/sass/screen.scss */
+.archive .date {
+  color: #2b2b2b;
+  font-style: italic;
+  float: right;
+}
+
+/* line 475, ../_sarcasm_theme/sass/screen.scss */
+.archive a:hover .date {
+  color: #e8e8e8;
 }

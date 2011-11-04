@@ -1,0 +1,7 @@
+<!-- note: the variable 'post_date' should be defined before inserting this file. -->
+
+<time datetime="{{ post_date | date: "%Y-%m-%d" }}">
+  <div class="year">  {{ post_date | date: '%Y' }} </div>
+  <div class="month"> {{ post_date | date: '%b' }} </div>
+  <div class="day">   {{ post_date | date: '%d' }} </div>
+</time>
