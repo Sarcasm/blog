@@ -2,13 +2,18 @@
 layout: default
 ---
 
+{% if page.previous %}
+<a rel="prev" href="{{ page.previous.url }}/" title="View {{ page.previous.title }}" >&larr; View previous article</a>
+{% endif %}
+
 <article>
-  <time datetime="{{ page.date | date: "%Y-%m-%d" }}">
-    <div class="year">  {{ page.date | date: '%Y' }} </div>
-    <div class="month"> {{ page.date | date: '%b' }} </div>
-    <div class="day">   {{ page.date | date: '%d' }} </div>
-  </time>
+  {% assign post_date = page.date %}
+  {% include post_date.html %}
 
   {{ content }}
 
 </article>
+
+{% if page.next %}
+<a rel="next" href="{{ page.next.url }}/" title="View {{ page.next.title }}" >&rarr; View next article</a>
+{% endif %}
