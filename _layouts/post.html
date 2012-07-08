@@ -2,18 +2,26 @@
 layout: default
 ---
 
-{% if page.previous %}
-<a rel="prev" href="{{ page.previous.url }}/" title="View {{ page.previous.title }}" >&larr; View previous article</a>
-{% endif %}
-
 <article>
+
   {% assign post_date = page.date %}
   {% include post_date.html %}
 
   {{ content }}
 
-</article>
+  <div class="prev-and-next">
+    {% if page.previous %}
+    <!-- <span class="prev-post icons-arrow-left"> -->
+    <span class="prev-post">
+      <a rel="prev" href="{{ page.previous.url }}/" title="View {{ page.previous.title }}" >&larr; {{ page.previous.title }}</a>
+    </span>
+    {% endif %}
 
-{% if page.next %}
-<a rel="next" href="{{ page.next.url }}/" title="View {{ page.next.title }}" >&rarr; View next article</a>
-{% endif %}
+    {% if page.next %}
+    <span class="next-post">
+      <a rel="next" href="{{ page.next.url }}/" title="View {{ page.next.title }}" >{{ page.next.title }} &rarr;</a>
+      {% endif %}
+    </span>
+  </div>
+
+</article>

@@ -12,24 +12,38 @@
 @import "compass/css3";
 
 /*
+ * Import sprites
+ */
+/*
+ * @import "icons/\*.png";
+ * @include all-icons-sprites;
+ */
+
+/*
  * General
  */
 body {
     font-family: 'Rosario', serif;
     background-color: $background_color;
     color: $font_color;
+    line-height: 1.4em;
 }
 
-.logo {
+.logo-div {
+    margin: 0 auto;
     text-align: center;
-    @include scale(0.75);
     padding: 20px 10px;
 }
 
-.logo:hover {
+.logo {
     @include transition-property(all);
     @include transition-duration(0.5s);
     @include scale(1);
+}
+
+
+.logo:hover {
+    @include scale(0.80);
 }
 
 article {
@@ -39,6 +53,17 @@ article {
     margin: 0 auto;
     padding-left: 80px;
     padding-right: 2em;
+}
+
+footer {
+    max-width: 750px;
+    width: expression(this.width > 750 ? 750: true);
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.copyright {
+    text-align: center;
 }
 
 p {
@@ -233,6 +258,24 @@ article
         padding-left: 20px;
         padding-bottom: 10px;
     }
+
+    .prev-and-next {
+        margin: 30px 0;
+        overflow: hidden;
+        height: 30px;           /* arrows size */
+    }
+
+    .prev-post {
+        width: 40%;
+        float: left;
+        text-align: left;
+    }
+
+    .next-post {
+        width: 40%;
+        float: right;
+        text-align: right;
+    }
 }
 
 /*
@@ -306,6 +349,7 @@ code {
     @include box-shadow(rgba(blue, 0.4) 0 0 20px, rgba(green, 0.2) 0 0 2px 1px inset);
     border: 2px dashed darken($background_color, 30%);
     position: relative;
+    line-height: 1.1em;
 }
 
 /*
