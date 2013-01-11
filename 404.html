@@ -2,28 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <base href="/" />
+
     <!-- HTML5 for IE - see: http://remysharp.com/2009/01/07/html5-enabling-script -->
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        <![endif]-->
 
     <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
     <!-- Web Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Rosario|Cabin|Inconsolata' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rosario|Inconsolata' rel='stylesheet' type='text/css'>
+
     <!--[if IE]>
         <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <![endif]-->
-    <link rel="icon" type="image/png" href="favicon.png" />
+        <![endif]-->
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="shortcut icon" href="/favicon.ico" />
+
     <title>404 Page Not Found</title>
   </head>
 
   <body>
 
-    <div class="logo">
-      <a href="/"><img src="/images/logo.png" alt="logo" /></a>
+    <div class="logo-div">
+      <a href="/"><img src="/images/logo.png" alt="logo" class="logo" /></a>
     </div>
 
     <article>
@@ -33,7 +38,7 @@
   </body>
 
   <footer>
-    <p>&#169; 2011 - <a href="#">Guillaume Papin</a></p>
+    <div class="copyright"> &copy; 2012 Guillaume Papin </div>
   </footer>
 
 </html>
